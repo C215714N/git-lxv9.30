@@ -12,7 +12,16 @@
     /* Contenido */
 
     /* Pie de Pagina */
-
+.red-social a{
+        color: rgb(247, 247, 248);
+         display: inline-block;
+         text-decoration: none;
+         width: 45px;
+         height: 45px;
+         line-height: 45px;
+         background-color: black;
+         text-align: center;
+     }
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
