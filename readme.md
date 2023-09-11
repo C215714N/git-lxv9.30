@@ -22,3 +22,9 @@ Esto es una guia para los alumnos de la capacitacion GIT y GitHub que cursan los
     * __git commit__: abre el editor para emitir una confirmacion de los cambios realizados.
     * __git log__: muestra el registro de confirmaciones realizadas en formato de commits.
     * __git push__: envia los cambios locales a la rama correspondiente de repositorio remoto.
+
+## Apuntadores
+
+Correspoden a referencias que apuntan a determinado commit, segun corresponda, y se utilizan para desplazarnos dentro del historial de confirmaciones.
+
+*__HEAD__ apuntador movil, que indica al usuario donde se encuentra dentro del repositorio.
