@@ -7,6 +7,17 @@
 
     /* Cabecera */
 
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+        color: rgb(144, 6, 6);
+        gap: 1rem;
+    }
+
     /* Navegacion */
 
     /* Contenido */
