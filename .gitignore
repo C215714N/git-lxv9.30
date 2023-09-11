@@ -1,0 +1,21 @@
+# Carpetas
+temp/
+tmp/
+node_modules/
+logs/
+docs/
+.vscode/
+database/
+
+# Archivos
+*.swp
+*.temp
+*.tmp
+*.log*
+*.txt
+*.env
+*.sass
+*.scss
+*.sh
+*.bat
+*.exe
