@@ -1,0 +1,12 @@
+# Archivos
+*.swp
+*.temp
+*.tmp
+*.log*
+*.txt
+*.env
+*.sass
+*.scss
+*.sh
+*.bat
+*.exe
