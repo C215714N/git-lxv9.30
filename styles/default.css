@@ -8,14 +8,48 @@
     /* Cabecera */
 
     header {
+        background-color: aliceblue;
+        color: rgb(144, 6, 6);
+        transition: all 1s linear;
+        border-radius: 10px;
+        box-shadow: 10px -10px 20px black;
+        overflow-x: hidden;
+    }
+
+    header:hover {
+        background-color: thistle;
+        color: rgb(255, 255, 255);
+        box-shadow: none;
+        transform: scale(.9);
+    }
+
+    .header-div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-color: aliceblue;
-        color: rgb(144, 6, 6);
         gap: 1rem;
+        position: relative;
+        animation: mover 5s 2;
+    }
+
+    @keyframes mover {
+        0% {
+            left: 0;
+        }
+
+        25% {
+            left: 100%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        100% {
+            left: 0;
+        }
     }
 
     /* Navegacion */
