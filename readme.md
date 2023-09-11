@@ -28,3 +28,4 @@ Esto es una guia para los alumnos de la capacitacion GIT y GitHub que cursan los
 Correspoden a referencias que apuntan a determinado commit, segun corresponda, y se utilizan para desplazarnos dentro del historial de confirmaciones.
 
 *__HEAD__ apuntador movil, que indica al usuario donde se encuentra dentro del repositorio.
+*__BRANCH__ apuntador dinamico, que siempre apunta al ultimo commit de la linea de tiempo actual.
