@@ -55,7 +55,14 @@
     /* Navegacion */
 
     /* Contenido */
+    /* Mapa de contacto */
+.mapaIframe {
+            background-color:aliceblue;
+            padding: 10px;
+            width: 40%;
+            display: flex; justify-content: center;
 
+}
     /* Pie de Pagina */
 .red-social a{
         color: rgb(247, 247, 248);
