@@ -55,7 +55,44 @@
     /* Navegacion */
 
     /* Contenido */
+    .section ul{display: flex;
+        flex-direction:column;
+        align-items: baseline;
+        gap: 1rem;
+        
+        }
+        .section ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
 
+
+    .section ul li{
+        padding: 5px;
+        background-color: crimson;
+        border-radius: 50px;
+        transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+        padding: 1rem 1rem;
+        
+      
+
+
+    }
+
+.section ul li:hover{
+transform: scale(1.1);
+
+}
+
+
+
+    .h2{ display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+
+}
     /* Pie de Pagina */
 .red-social a{
         color: rgb(247, 247, 248);
