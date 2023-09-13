@@ -91,8 +91,18 @@ transform: scale(1.1);
         align-items: center;
     }
         
-
-
+    /* Tablas */
+    table{
+        margin: auto;
+    }
+    th,
+    td,
+    table caption{
+        padding: .5rem 1rem;
+    }
+    table caption{
+        border-radius: .5rem .5rem 0 0;
+    }
     /* Mapa de contacto */
 .mapaIframe {
             background-color:aliceblue;
