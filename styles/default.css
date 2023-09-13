@@ -7,12 +7,73 @@
 
     /* Cabecera */
 
+    header {
+        background-color: aliceblue;
+        color: rgb(144, 6, 6);
+        transition: all 1s linear;
+        border-radius: 10px;
+        box-shadow: 10px -10px 20px black;
+        overflow-x: hidden;
+    }
+
+    header:hover {
+        background-color: thistle;
+        color: rgb(255, 255, 255);
+        box-shadow: none;
+        transform: scale(.9);
+    }
+
+    .header-div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+        animation: mover 5s 2;
+    }
+
+    @keyframes mover {
+        0% {
+            left: 0;
+        }
+
+        25% {
+            left: 100%;
+        }
+
+        75% {
+            left: -100%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
     /* Navegacion */
 
     /* Contenido */
+    /* Mapa de contacto */
+.mapaIframe {
+            background-color:aliceblue;
+            padding: 10px;
+            width: 40%;
+            display: flex; justify-content: center;
 
+}
     /* Pie de Pagina */
-
+.red-social a{
+        color: rgb(247, 247, 248);
+         display: inline-block;
+         text-decoration: none;
+         width: 45px;
+         height: 45px;
+         line-height: 45px;
+         background-color: black;
+         text-align: center;
+     }
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
