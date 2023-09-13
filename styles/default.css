@@ -103,6 +103,24 @@ transform: scale(1.1);
     table caption{
         border-radius: .5rem .5rem 0 0;
     }
+    .colabs caption{
+        background-color: #c36;
+    }
+    .colabs{
+        border-collapse: collapse;
+        color: #eee;
+        text-shadow: 0 0 .25rem #333;
+        background-image: linear-gradient(
+            #c36,
+            #448
+        );
+    }
+    .colabs tbody > :nth-child(odd){
+        background-color: #eee3;
+    }
+    .colabs tbody > :nth-child(even){
+        background-color: #9993;
+    }
     /* Mapa de contacto */
 .mapaIframe {
             background-color:aliceblue;
