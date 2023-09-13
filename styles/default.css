@@ -114,6 +114,7 @@ transform: scale(1.1);
             #c36,
             #448
         );
+        box-shadow: -.75rem .75rem .5rem #3338;
     }
     .colabs tbody > :nth-child(odd){
         background-color: #eee3;
