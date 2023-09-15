@@ -118,6 +118,9 @@
     .icon-toggle::before{
         content: '\2630';
     }
+    .icon-close::before{
+        content: '\2715';
+    }
     /* Contenido */
     .section ul{display: flex;
         flex-direction:column;

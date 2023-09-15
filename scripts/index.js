@@ -8,7 +8,11 @@ const
 const clickAndres = document.querySelector(".click");
 
 /* Funciones */
-
+function toggle(target, btn, className, [a,b]){
+    target.classList.toggle(className) ?
+    btn.classList.replace(a,b) :
+    btn.classList.replace(b,a);
+}
 
 /* Eventos */
 
@@ -17,6 +21,6 @@ clickAndres.addEventListener("click", () => {
     alert("VAMOS A PROGRAMAR CON CRISTIAN");
 });
 
-navButton.onclick = function(){
-    navMenu.classList.toggle("active");
+navButton.onclick = function(e){
+    toggle(navMenu, e.target, "active", ['icon-toggle','icon-close'])
 }
