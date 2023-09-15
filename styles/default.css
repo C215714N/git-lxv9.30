@@ -77,8 +77,31 @@
         /* color image position/size repeat */
     }
     nav a{
+        display: inline-block;
+        position: relative;
+        padding: .5rem;
+        border-radius: .25rem;
         color: crimson;
         text-decoration: none;
+    }
+    nav a::before{
+        content: '';   
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: .25rem;
+        height: .1rem;
+        background: linear-gradient(
+            to right,
+            #eee8,
+            #c36
+        );
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .navbar a:hover::before{
+        width: 100%;
+        opacity: .7;
     }
     .navbar{
         margin: 0;
