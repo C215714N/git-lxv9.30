@@ -215,7 +215,26 @@ transform: scale(1.1);
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
-
+@media screen and (min-width: 768px){
+    body{
+        grid-template-areas: 
+            'nav' 
+            'header' 
+            'main'
+            'footer';
+    }
+    .navbar{
+        gap: 1.5rem;
+    }
+    .navitem{
+        display: flex;
+        align-items: center;
+    }
+    [class*="icon-"]::before{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}
 /* Large Devices - Laptops */
 
 /* Extra Large Devices - Desktop */
