@@ -9,6 +9,26 @@
         scroll-behavior: smooth;
         font-family: 'Raleway', 'Century Gothic', sans-serif;
     }
+    body{
+        display: grid;
+        grid-template-areas: 
+            'header' 
+            'main' 
+            'footer' 
+            'nav';
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    nav{
+        grid-area: nav;
+    }
     /* Cabecera */
 
     header {
@@ -61,7 +81,50 @@
     }
 
     /* Navegacion */
-
+    nav{
+        position: sticky;
+        top: 0;
+        bottom: 0;
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 1rem;
+        background-color: #c14a;
+    }
+    nav a{
+        text-decoration: none;
+        color: #eee;
+    }
+    nav a:hover{
+        text-shadow: 0 0 .25rem #eee;
+    }
+    [class*="icon-"]::before{
+        display: block;
+        font-size: 2rem;
+        padding: .5rem;
+        line-height: 1rem;
+        filter: grayscale(100%);
+    }
+    [class*="icon-"]:hover::before{
+        filter: grayscale(70%);
+    }
+    .icon-home::before{
+        content: '🏠'
+    }
+    .icon-about::before{
+        content: '📰'
+    }
+    .icon-service::before{
+        content: '⛽'
+    }
+    .icon-contact::before{
+        content: '🧑‍💼'
+    }
     /* Contenido */
     .section ul{display: flex;
         flex-direction:column;
