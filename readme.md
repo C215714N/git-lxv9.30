@@ -29,3 +29,4 @@ Correspoden a referencias que apuntan a determinado commit, segun corresponda, y
 
 * __HEAD__ apuntador movil, que indica al usuario donde se encuentra dentro del repositorio.
 * __BRANCH__ apuntador dinamico, que siempre apunta al ultimo commit de la linea de tiempo actual.
+* __TAG__ apuntador estatico, que se corresponde con algun commit en particular y es utilizado para el versionado.
