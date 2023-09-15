@@ -9,7 +9,26 @@
         scroll-behavior: smooth;
         font-family: 'Raleway', 'Century Gothic', sans-serif;
     }
-
+    body{
+        display: grid;
+        grid-template-areas: 
+            'header' 
+            'main' 
+            'footer' 
+            'nav';
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    nav{
+        grid-area: nav;
+    }
     /* Cabecera */
 
     header {
@@ -64,17 +83,21 @@
     /* Navegacion */
     nav{
         position: sticky;
-        top: 0;
+        bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
         padding: .5rem;
         background: #eee linear-gradient(
             #c363,
             #4483
         );
         /* color image position/size repeat */
+    }
+    nav li{
+        display: flex;
+        padding: .25rem;
     }
     nav a{
         display: inline-block;
@@ -120,6 +143,28 @@
     }
     .icon-close::before{
         content: '\2715';
+    }
+    [class*="icon-"]::before{
+        display: block;
+        font-size: 2rem;
+        padding: .5rem;
+        line-height: 1rem;
+        filter: grayscale(100%);
+    }
+    [class*="icon-"]:hover::before{
+        filter: grayscale(70%);
+    }
+    .icon-home::before{
+        content: '🏠'
+    }
+    .icon-about::before{
+        content: '📰'
+    }
+    .icon-service::before{
+        content: '⛽'
+    }
+    .icon-contact::before{
+        content: '🧑‍💼'
     }
     /* Contenido */
     .section ul{display: flex;
@@ -211,7 +256,32 @@ transform: scale(1.1);
 /* Small Devices - Smartphones */
 
 /* Medium Devices - Tablets */
-
+@media screen and (min-width: 768px){
+    body{
+        grid-template-areas: 
+            'nav' 
+            'header' 
+            'main'
+            'footer';
+    }
+    nav button{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        width: auto;
+        gap: 1.5rem;
+        max-height: 100vh;
+    }
+    .navitem{
+        display: flex;
+        align-items: center;
+    }
+    [class*="icon-"]::before{
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}
 /* Large Devices - Laptops */
 
 /* Extra Large Devices - Desktop */
